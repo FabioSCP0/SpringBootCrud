@@ -5,7 +5,7 @@ edite o campo (spring.datasource.username= spring.datasource.password=) insirind
 
 crie um novo SCHEMA no banco de dados com o nome "springboot"
 
-importe o projeto MAVEN na IDE para que as dependências sejam baixadas
+importe o projeto MAVEN (File -> Import -> Maven -> Existing Maven Projects) na IDE para que as dependências sejam baixadas
 
 execute a classe ProjetoSbApplication.java (/ProjetoSB/src/main/java/com/github/FabioSCP0/ProjetoSB/ProjetoSbApplication.java)
 
