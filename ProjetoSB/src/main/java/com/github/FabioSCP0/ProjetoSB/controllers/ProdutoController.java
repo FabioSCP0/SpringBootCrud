@@ -18,13 +18,16 @@ public class ProdutoController {
 	@Autowired
 	private ProdutoRepository produtoRepository;
 	
-	@PostMapping
-	public @ResponseBody Produto novoProduto(@Valid Produto produto) {
-		produtoRepository.save(produto); 
+	//Create and Update
+	//@PostMapping
+	//@PutMapping
+	@RequestMapping(method = {RequestMethod.POST, RequestMethod.PUT})
+	public @ResponseBody Produto salvarProduto(@Valid Produto produto) {
+		produtoRepository.save(produto);
 		return produto;
 	}
 
-		@GetMapping
+	@GetMapping
 	public Iterable<Produto> obterProdutos() {
 		return produtoRepository.findAll();
 	}
