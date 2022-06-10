@@ -30,17 +30,20 @@ public class ProdutoController {
 		produtoRepository.save(produto);
 		return produto;
 	}
-
+	
+	// Read
 	@GetMapping
 	public Iterable<Produto> obterProdutos() {
 		return produtoRepository.findAll();
 	}
-
+	
+	// Read
 	@GetMapping(path="/nome/{parteNome}")
 	public Iterable<Produto> obterProdutosPorNome(@PathVariable String parteNome) {
 		return produtoRepository.findByNomeContainingIgnoreCase(parteNome);
 	}
-
+	
+	// Read
 	@GetMapping(path = "/pagina/{numeroPagina}/{qtdePagina}")
 	public Iterable<Produto> obterProdutosPorPagina(@PathVariable int numeroPagina, @PathVariable int qtdePagina) {
 
@@ -51,13 +54,14 @@ public class ProdutoController {
 		PageRequest page = PageRequest.of(numeroPagina, qtdePagina);
 		return produtoRepository.findAll(page);
 	}
-
+	
+	// Read
 	@GetMapping(path="/{id}")
 	public Optional<Produto> obterProdutosId(@PathVariable int id) {
 		return produtoRepository.findById(id);
 	}
 
-
+	// Delete
 	@DeleteMapping(path = "/{id}")
 	public void excluirProduto(@PathVariable int id) {
 		produtoRepository.deleteById(id);
