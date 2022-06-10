@@ -37,4 +37,11 @@ public class ProdutoController {
 		return produtoRepository.findById(id);
 	}
 
+
+	@DeleteMapping(path = "/{id}")
+	public void excluirProduto(@PathVariable int id) {
+		produtoRepository.deleteById(id);
+	}
+
+
 }
