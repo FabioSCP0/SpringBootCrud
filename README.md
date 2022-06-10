@@ -1,13 +1,13 @@
 # SpringBootCrud
-Para executar esse projeto, clone o repositorio, modifique o nome do arquivo applicationModel.properties (/ProjetoSB/src/main/resources/applicationModel.properties) para application.properties
+Para executar esse projeto, clone o repositorio, modifique o nome do arquivo "applicationModel.properties"(/ProjetoSB/src/main/resources/applicationModel.properties) para "application.properties"
 
-edite o campo (spring.datasource.username= spring.datasource.password=) insirindo o usuario e senha do banco de dados MYSQL do seu sistema
+Edite o campo (spring.datasource.username= spring.datasource.password=) insirindo o usuario e senha do banco de dados MYSQL do seu sistema
 
-crie um novo SCHEMA no banco de dados com o nome "springboot"
+Crie um novo SCHEMA no banco de dados com o nome "springboot"
 
-importe o projeto MAVEN (File -> Import -> Maven -> Existing Maven Projects) na IDE para que as dependências sejam baixadas
+Importe o projeto MAVEN (File -> Import -> Maven -> Existing Maven Projects) na IDE para que as dependências sejam baixadas
 
-execute a classe ProjetoSbApplication.java (/ProjetoSB/src/main/java/com/github/FabioSCP0/ProjetoSB/ProjetoSbApplication.java)
+Execute a classe ProjetoSbApplication.java (/ProjetoSB/src/main/java/com/github/FabioSCP0/ProjetoSB/ProjetoSbApplication.java)
 
 Para fazer um CREATE no POSTMAN http://localhost:8080/api/produtos/ inserindo o NOME, o PRECO, o DESCONTO do produto
 
