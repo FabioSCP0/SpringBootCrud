@@ -3,8 +3,6 @@ Para executar esse projeto, clone o repositorio, modifique o nome do arquivo "ap
 
 Edite o campo (spring.datasource.username= spring.datasource.password=) insirindo o usuario e senha do banco de dados MYSQL do seu sistema
 
-Crie um novo SCHEMA no banco de dados com o nome "springboot"
-
 Importe o projeto MAVEN (File -> Import -> Maven -> Existing Maven Projects) na IDE para que as dependências sejam baixadas
 
 Execute a classe ProjetoSbApplication.java (/ProjetoSB/src/main/java/com/github/FabioSCP0/ProjetoSB/ProjetoSbApplication.java)
@@ -19,4 +17,4 @@ Para fazer um READE por paginação http://localhost:8080/api/produtos/pagina/{n
 
 Para fazer um READE por id http://localhost:8080/api/produtos/{Id}
 
-Para fazer um DELETE no POSTMAN http://localhost:8080/api/produtos/ inserindo o ID do produto
+Para fazer um DELETE no POSTMAN http://localhost:8080/api/produtos/ inserindo o ID do produto.
